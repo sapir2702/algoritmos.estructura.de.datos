@@ -1,0 +1,76 @@
+import time
+def ejercicio1():
+  for numero in range (1,11):
+   print(numero)
+def ejercicio2():
+    for x in range (1,6):
+        print("hello pa-pi word")
+def ejercicio3():
+   for x  in range(2,2,21):
+       print(x)
+def ejercicio4():
+   for x in range(7,70,7):
+       print(x)
+def ejercicio5():
+ suma=0
+ for x in range(1,6):
+  print(x)
+ suma+=1
+def ejercicio6():
+    numero = int(input("ingrese un numero"))
+    if numero< 0:
+       print("el numero es menor que o")
+    elif numero ==0:
+       print("el numero es igual a 0")
+    else:
+       print("el numero es mayor que o")
+def ejercicio7():
+    edad = int(input("ingrese su edad"))
+    if edad < 18:
+        print("su edad es menor que 18, no puede pasar")
+    else:
+        print("su es mayor que 18, puede pasar")
+def ejercicio8():
+    contrasenia = int(input("ingrese su contrasenia"))
+    if contrasenia == "python123" :
+        print("¡Contraseña correcta! Acceso concedido.")
+    else:
+        print( "¡Contraseña incorrecta, Autodestrucción en 5 minutos!")
+
+def ejercicio9():
+    numero = int(input("ingrese un numero"))
+    if numero % 2 == 0:
+        print("el numero es par")
+    else:
+        print("el numero es impar")
+
+def ejercicio10():
+    pregunta1 = int(input("Han comprado palomitas de maíz "))
+    pregunta2 = int(input("¿tiene 65 o mas años? "))
+    if pregunta2 < 65 and pregunta1 == "si":
+        print("¡Felicidades! Tienes entrada gratuita al cine.")
+    else:
+        print("Compra la entrada o raja de acá")
+def ejercicio11():
+    x = 5
+    while x >= 1:
+        print(x)
+        x = x - 1
+        time.sleep(1)
+        if x == 0:
+            print("¡Despegue!")
+def ejercicio12():
+    adivina = int(input("Adivina el Número secreto "))
+    while adivina != 7:
+        adivina = int(input("ese no es el número correcto, Inténtalo de Nuevo "))
+
+    print("¡Felicidades! Adivinaste el número.")
+def ejercicio13():
+    suma = 1
+    result = 0
+    print("inglese los numeros que quiere sumar y luego ponga 0 para inalizar la operacion")
+    while suma != 0:
+        suma = int(input("Ingrese un número para ser sumado "))
+        result = result + suma
+    print("su resultado es ", result)
+ejercicio12()
